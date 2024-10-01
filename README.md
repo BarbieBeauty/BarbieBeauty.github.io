@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+               
             </ul>
         </nav>
     </header>
