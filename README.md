@@ -58,9 +58,6 @@
             <h2>Sobre Nosotros</h2>
             <p>En Barbie Beauty, creemos que cada persona tiene su propia belleza. Nuestra misión es proporcionar productos que celebren la diversidad y la creatividad.</p>
         </section>
-
-
-        </section>
     </main>
 
     <footer>
