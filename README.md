@@ -59,20 +59,7 @@
             <p>En Barbie Beauty, creemos que cada persona tiene su propia belleza. Nuestra misión es proporcionar productos que celebren la diversidad y la creatividad.</p>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
+
         </section>
     </main>
 
