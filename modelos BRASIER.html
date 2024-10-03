@@ -1,0 +1,107 @@
+<script>
+    function abrirImagen(src) {
+        // Crear un fondo oscuro
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; // Fondo oscuro
+        overlay.style.zIndex = '999'; // Detrás de la imagen
+    
+        // Crear la imagen
+        const img = document.createElement('img');
+        img.src = src;
+        img.style.maxWidth = '90%'; // Máximo ancho
+        img.style.maxHeight = '90%'; // Máximo alto
+        img.style.position = 'fixed';
+        img.style.top = '50%';
+        img.style.left = '50%';
+        img.style.transform = 'translate(-50%, -50%)'; // Centrar la imagen
+        img.style.zIndex = '1000'; // Encima del fondo
+        img.style.borderRadius = '10px'; // Bordes redondeados
+        img.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)'; // Sombra
+    
+        // Agregar eventos para cerrar la imagen y el fondo al hacer clic
+        overlay.onclick = function() {
+            document.body.removeChild(overlay);
+        };
+        img.onclick = function(event) {
+            event.stopPropagation(); // Evitar que el clic en la imagen cierre el overlay
+        };
+    
+        // Agregar los elementos al body
+        overlay.appendChild(img);
+        document.body.appendChild(overlay);
+    }
+    </script>
+    
+    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos - Barbie Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h4>Modelos disponibles</h4>
+        <nav>
+            <a href="1.html">Volver a inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="modelos-disponibles">
+            <div class="modelo" onclick="abrirImagen('BRASIERES/BRASIER CREMA.jpeg')">
+                <img src="BRASIERES/BRASIER CREMA.jpeg" alt="Modelo 1">
+                <h3>Modelo 1</h3>
+            </div>
+         
+            <div class="modelo" onclick="abrirImagen('BRASIERES/BRASIER NEGRO.jpeg')">
+                <img src="BRASIERES/BRASIER NEGRO.jpeg" alt="Modelo 2">
+                <h3>Modelo 2</h3>
+                <p>.</p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('BRASIERES/ROSA.jpeg')">
+                <img src="BRASIERES/ROSA.jpeg" alt="Modelo 3">
+                <h3>Modelo 3</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('BRASIERES/ROSA 1.jpeg')">
+                <img src="BRASIERES/ROSA 1.jpeg" alt="Modelo 4">
+                <h3>Modelo 4</h3>
+                <p></p>
+            </div>
+            <div class="modelo">
+                <img src="BRASIERES/ESTAMPADO.jpeg" alt="Modelo 5">
+                <h3>Modelo 5</h3>
+                <p></p>
+            </div>
+            <div class="modelo">
+                <img src="BRASIERES/WhatsApp Image 2024-09-29 at 7.07.47 PM.jpeg" alt="Modelo 6">
+                <h3>Modelo 6</h3>
+                <p></p>
+            </div>
+            <div class="modelo">
+                <img src="BRASIERES/CREMA 2.jpeg" alt="Modelo 7">
+                <h3>Modelo 7</h3>
+                <p></p>
+            </div>
+            <div class="modelo">
+                <img src="BRASIERES/ROJO.jpeg" alt="Modelo 8">
+                <h3>Modelo 8</h3>
+                <p></p>
+            </div>
+            <!-- Agrega más modelos según sea necesario -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barbie Beauty. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
