@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,7 @@
 <body>
     <header>
         <h1>Barbie Beauty</h1>
+        <h2>BOUTIQUE</h2>
         <nav>
             <ul>
                 <li><a href="#productos">Productos</a></li>
@@ -19,58 +21,59 @@
 
     <main>
         <section id="hero">
-            <h2>Bienvenida a Barbie Beauty</h2>
-            <p>¡Descubre la magia de la belleza con nuestros productos inspirados en Barbie!</p>
+            <h5>Bienvenidos a Barbie Beauty boutique</h5>
+               
+                <div class="subseccion">
+                    <p>Descubre los productos más populares y las últimas tendencias en moda.</p>
+                    <p>¡Eleva tu estilo: donde la moda se encuentra con la personalidad!</p>
+                </div>
+            </section>
+             
+            
         </section>
 
         <section id="productos">
             <h2>Nuestros Productos</h2>
+
             <div class="producto">
-                <img src="tenis nike blancos.jpeg" alt="Producto 1">
+                <img src="TENIS/tenis nike 1.jpeg" alt="Producto 1">
                 <h3>TENIS NIKE</h3>
                 <p>Tenis nike de excelente calidad. CALIDAD G5</p>
                 <p>Precio: $1100</p>
                 <button onclick="window.open('modelos tenis.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
             <div class="producto">
-                <img src="Brasier mujer variados.jpeg" alt="Producto 2">
-                <h3>Brasier</h3>
-                <p>Varios colores.</p>
-                <p>Precio: $150 c/u</p>
+                <img src="BRASIERES/Brasier mujer variados.jpeg" alt="Producto 2">
+                <h3>Set de ropa interior</h3>
+                <p>Set de brasier + pantie VS.</p>
+                <p>Precio: $500</p>
                 <button onclick="window.open('modelos BRASIER.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
             <div class="producto">
-                <img src="Conjunto deportivo negro.jpeg" alt="Producto 3">
-                <h3>Conjuntos</h3>
-                <p>Conjunto deportivo para salidas o gimnasio.</p>
-                <p>Precio: $700</p>
+                <img src="CONJUNTO DEPORTIVO/Conjunto deportivo negro.jpeg" alt="Producto 3">
+                <h3>Conjuntos deluxe</h3>
+                <p>Conjuntos como LV, GUCCI, DIOR, etc.</p>
+                <p>Precio: $750</p>
+                <button onclick="window.open('modelos de conjuntos.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
             <div class="producto">
-                <img src="camisa.jpg" alt="Producto 4">
-                <h3>Camisa</h3>
-                <p>camisa casual.</p>
-                <p>Precio: $150</p>
+                <img src="BOLSAS/Titulo de bolsas.jpeg" alt="Producto 4">
+                <h3>BOLSAS ALTA GAMA</h3>
+                <p>COACH, DIESEL.</p>
+                <p>Precio: $800</p>
+                <button onclick="window.open('modelos BOLSAS.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
         </section>
 
         <section id="sobre-nosotros">
             <h2>Sobre Nosotros</h2>
-            <p>En Barbie Beauty, creemos que cada persona tiene su propia belleza. Nuestra misión es proporcionar productos que celebren la diversidad y la creatividad.</p>
+            <h3>En Barbie Beauty, creemos que cada persona tiene su propia belleza. Nuestra misión es proporcionar productos que celebren la diversidad y la creatividad.<h3>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
             <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <button type="submit">Enviar</button>
+                <p>Marlene Azucena 6141170236</p>
             </form>
         </section>
     </main>
@@ -80,5 +83,3 @@
     </footer>
 </body>
 </html>
-
-
