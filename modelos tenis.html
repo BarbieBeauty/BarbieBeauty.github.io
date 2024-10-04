@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos - Barbie Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .left-arrow {
+            left: 10px;
+        }
+
+        .right-arrow {
+            right: 10px;
+        }
+    </style>
+    <script>
+        let currentIndex = 0;
+        let images = [];
+
+        function abrirImagen(src) {
+            images = [
+                'TENIS/tenis nike 2.jpeg',
+                'TENIS/tenis nike 3.jpeg',
+                'TENIS/tenis nike 4.jpeg',
+                'TENIS/tenis nike 5.jpeg',
+                'TENIS/tenis nike 6.jpeg',
+                'TENIS/tenis nike 7.jpeg',
+                'TENIS/tenis nike 8.jpeg',
+                'TENIS/tenis nike 9.jpeg',
+                'TENIS/tenis nike 10.jpeg',
+                'TENIS/tenis nike 11.jpeg',
+                'TENIS/tenis nike 12.jpeg',
+                'TENIS/tenis nike 13.jpeg',
+                'TENIS/tenis nike 14.jpeg',
+                'TENIS/tenis nike 15.jpeg',
+                'TENIS/tenis nike 16.jpeg',
+                'TENIS/tenis nike 17.jpeg',
+                'TENIS/tenis nike 18.jpeg',
+                'TENIS/tenis nike 19.jpeg',
+                'TENIS/tenis nike 20.jpeg',
+                'TENIS/tenis nike 21.jpeg',
+                'TENIS/tenis nike 22.jpeg',
+                'TENIS/tenis nike 23.jpeg',
+                'TENIS/tenis nike 24.jpeg',
+                'TENIS/tenis nike 25.jpeg',
+                'TENIS/tenis nike 26.jpeg',
+                'TENIS/tenis nike 27.jpeg',
+                'TENIS/tenis nike 28.jpeg',
+                'TENIS/tenis nike 29.jpeg',
+                'TENIS/tenis nike 30.jpeg',
+                'TENIS/tenis nike 31.jpeg',
+                'TENIS/tenis nike 32.jpeg',
+                'TENIS/tenis nike 33.jpeg',
+                'TENIS/tenis nike 34.jpeg',
+                'TENIS/tenis nike 35.jpeg',
+                'TENIS/tenis nike 36.jpeg',
+                'TENIS/tenis nike 37.jpeg',
+                'TENIS/tenis nike 38.jpeg',
+                'TENIS/tenis nike 39.jpeg',
+                'TENIS/tenis nike 40.jpeg',
+                'TENIS/tenis nike 41.jpeg',
+            ];
+            currentIndex = images.indexOf(src);
+            mostrarImagen(src);
+        }
+
+        function mostrarImagen(src) {
+            const overlay = document.createElement('div');
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            overlay.style.zIndex = '999';
+            overlay.style.display = 'flex';
+            overlay.style.alignItems = 'center';
+            overlay.style.justifyContent = 'center';
+
+            const img = document.createElement('img');
+            img.src = src;
+            img.style.maxWidth = '90%';
+            img.style.maxHeight = '90%';
+            img.style.borderRadius = '10px';
+            img.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
+            img.style.transition = 'transform 0.5s ease-in-out';
+
+            const leftArrow = document.createElement('button');
+            leftArrow.className = 'arrow left-arrow';
+            leftArrow.innerHTML = '&#9664;'; // Flecha izquierda
+            leftArrow.onclick = () => cambiarImagen(-1);
+
+            const rightArrow = document.createElement('button');
+            rightArrow.className = 'arrow right-arrow';
+            rightArrow.innerHTML = '&#9654;'; // Flecha derecha
+            rightArrow.onclick = () => cambiarImagen(1);
+
+            overlay.appendChild(img);
+            overlay.appendChild(leftArrow);
+            overlay.appendChild(rightArrow);
+            document.body.appendChild(overlay);
+
+            overlay.onclick = function() {
+                document.body.removeChild(overlay);
+            };
+        }
+
+        function cambiarImagen(direction) {
+            currentIndex += direction;
+
+            // Asegurar que el índice se mantenga dentro del rango
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+
+            mostrarImagen(images[currentIndex]);
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos - Barbie Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h4>Modelos Disponibles</h4>
+        <nav>
+            <a href="1.html">Volver a inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="modelos-disponibles">
+        
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 1.jpeg')">
+                <img src="TENIS/tenis nike 1.jpeg" alt="Modelo 1">
+                <h3>Modelo 1</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 2.jpeg')">
+                <img src="TENIS/tenis nike 2.jpeg" alt="Modelo 2">
+                <h3>Modelo 2</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 3.jpeg')">
+                <img src="TENIS/tenis nike 3.jpeg" alt="Modelo 3">
+                <h3>Modelo 3</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 4.jpeg')">
+                <img src="TENIS/tenis nike 4.jpeg" alt="Modelo 4">
+                <h3>Modelo 4</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 5.jpeg')">
+                <img src="TENIS/tenis nike 5.jpeg" alt="Modelo 5">
+                <h3>Modelo 5</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 6.jpeg')">
+                <img src="TENIS/tenis nike 6.jpeg" alt="Modelo 6">
+                <h3>Modelo 6</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 7.jpeg')">
+                <img src="TENIS/tenis nike 7.jpeg" alt="Modelo 7">
+                <h3>Modelo 7</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 8.jpeg')">
+                <img src="TENIS/tenis nike 8.jpeg" alt="Modelo 8">
+                <h3>Modelo 8</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 9.jpeg')">
+                <img src="TENIS/tenis nike 9.jpeg" alt="Modelo 9">
+                <h3>Modelo 9</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 10.jpeg')">
+                <img src="TENIS/tenis nike 10.jpeg" alt="Modelo 10">
+                <h3>Modelo 10</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 11.jpeg')">
+                <img src="TENIS/tenis nike 11.jpeg" alt="Modelo 11">
+                <h3>Modelo 11</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 12.jpeg')">
+                <img src="TENIS/tenis nike 12.jpeg" alt="Modelo 12">
+                <h3>Modelo 12</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 13.jpeg')">
+                <img src="TENIS/tenis nike 13.jpeg" alt="Modelo 13">
+                <h3>Modelo 13</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 14.jpeg')">
+                <img src="TENIS/tenis nike 14.jpeg" alt="Modelo 14">
+                <h3>Modelo 14</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 15.jpeg')">
+                <img src="TENIS/tenis nike 15.jpeg" alt="Modelo 15">
+                <h3>Modelo 15</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 16.jpeg')">
+                <img src="TENIS/tenis nike 16.jpeg" alt="Modelo 16">
+                <h3>Modelo 16</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 17.jpeg')">
+                <img src="TENIS/tenis nike 17.jpeg" alt="Modelo 17">
+                <h3>Modelo 17</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 18.jpeg')">
+                <img src="TENIS/tenis nike 18.jpeg" alt="Modelo 18">
+                <h3>Modelo 18</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 19.jpeg')">
+                <img src="TENIS/tenis nike 19.jpeg" alt="Modelo 19">
+                <h3>Modelo 19</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 20.jpeg')">
+                <img src="TENIS/tenis nike 20.jpeg" alt="Modelo 20">
+                <h3>Modelo 20</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 21.jpeg')">
+                <img src="TENIS/tenis nike 21.jpeg" alt="Modelo 21">
+                <h3>Modelo 21</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 22.jpeg')">
+                <img src="TENIS/tenis nike 22.jpeg" alt="Modelo 22">
+                <h3>Modelo 22</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 23.jpeg')">
+                <img src="TENIS/tenis nike 23.jpeg" alt="Modelo 23">
+                <h3>Modelo 23</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 24.jpeg')">
+                <img src="TENIS/tenis nike 24.jpeg" alt="Modelo 24">
+                <h3>Modelo 24</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 25.jpeg')">
+                <img src="TENIS/tenis nike 25.jpeg" alt="Modelo 25">
+                <h3>Modelo 25</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 26.jpeg')">
+                <img src="TENIS/tenis nike 26.jpeg" alt="Modelo 26">
+                <h3>Modelo 26</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 27.jpeg')">
+                <img src="TENIS/tenis nike 27.jpeg" alt="Modelo 27">
+                <h3>Modelo 27</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 28.jpeg')">
+                <img src="TENIS/tenis nike 28.jpeg" alt="Modelo 28">
+                <h3>Modelo 28</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 30.jpeg')">
+                <img src="TENIS/tenis nike 30.jpeg" alt="Modelo 30">
+                <h3>Modelo 29</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 31.jpeg')">
+                <img src="TENIS/tenis nike 31.jpeg" alt="Modelo 31">
+                <h3>Modelo 31</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 32.jpeg')">
+                <img src="TENIS/tenis nike 32.jpeg" alt="Modelo 32">
+                <h3>Modelo 32</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 33.jpeg')">
+                <img src="TENIS/tenis nike 33.jpeg" alt="Modelo 33">
+                <h3>Modelo 33</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 34.jpeg')">
+                <img src="TENIS/tenis nike 34.jpeg" alt="Modelo 34">
+                <h3>Modelo 34</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 35.jpeg')">
+                <img src="TENIS/tenis nike 35.jpeg" alt="Modelo 35">
+                <h3>Modelo 35</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 36.jpeg')">
+                <img src="TENIS/tenis nike 36.jpeg" alt="Modelo 36">
+                <h3>Modelo 36</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 37.jpeg')">
+                <img src="TENIS/tenis nike 37.jpeg" alt="Modelo 37">
+                <h3>Modelo 37</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 38.jpeg')">
+                <img src="TENIS/tenis nike 38.jpeg" alt="Modelo 38">
+                <h3>Modelo 38</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 39.jpeg')">
+                <img src="TENIS/tenis nike 39.jpeg" alt="Modelo 39">
+                <h3>Modelo 39</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 40.jpeg')">
+                <img src="TENIS/tenis nike 40.jpeg" alt="Modelo 40">
+                <h3>Modelo 40</h3>
+                <p></p>
+            </div>
+            <div class="modelo" onclick="abrirImagen('TENIS/tenis nike 41.jpeg')">
+                <img src="TENIS/tenis nike 41.jpeg" alt="Modelo 41">
+                <h3>Modelo 41</h3>
+                <p></p>
+            </div>
+            <!-- Agrega más modelos según sea necesario -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barbie Beauty. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
