@@ -1,0 +1,425 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8d3e2; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+}
+
+
+header {
+    background-color: #ffc7e9; /* Rosa vibrante */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6f92; /* Opción para agregar un borde inferior para darle estilo */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    animation: shine 1.5s infinite; /* Aplicar la animación */
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 0, 200, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        text-shadow: 0 0 20px rgb(255, 0, 225), 0 0 30px rgb(0, 238, 255), 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(76, 31, 73, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+    }
+}
+
+.header-modelos-bolsas {
+    background-color: #ffc7e9; /* Cambiar a color blanco */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff6f92; /* Opción para agregar un borde inferior para darle estilo */
+}
+
+.header-modelos-bolsas h1,
+.header-modelos-bolsas h2 {
+    color: #000000; /* Color de texto oscuro para contraste */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #f7e8f1; /* Color de fondo */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más atractivo */
+}
+ 
+#hero {
+    overflow: hidden; /* Oculta el contenido que sale del área */
+}
+
+
+#hero h5, #hero p {
+    animation: slideIn 1s forwards; /* Aplicar la animación */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%); /* Inicia fuera de la pantalla a la izquierda */
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        transform: translateX(0); /* Finaliza en su posición original */
+        opacity: 1; /* Se vuelve visible */
+    }
+}
+#hero h5 {
+    margin-bottom: 20px; /* Espacio entre el título y el párrafo */
+}
+
+#hero p {
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+    animation: slideIn 1s forwards; /* Animación para el párrafo */
+}
+
+
+
+    
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#productos {
+        text-align: center; /* Centra el texto */
+}
+
+
+#productos h2 {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 30px; /* Espacio entre el título y las imágenes */
+}
+
+
+h2 {
+    text-align: center; /* Centra el texto */
+
+}
+
+   
+
+.producto:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+}
+.producto {
+    background-color: #fff;
+    border: 2px solid #dd1c9d; /* Borde rosa */
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: transform 0.2s; /* Efecto de transformación */
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.producto h3 {
+    color: #ff6f92;
+}
+
+button {
+    background-color: #ff6f92; /* Botón rosa */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff4c6c; /* Efecto hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f92; /* Rosa vibrante */
+    color: #fff;
+}
+
+form {
+    background-color: #ffe0f2; /* Rosa claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff6f92;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+}
+
+
+
+.modelo {
+    border: 2px solid #ff6f92; /* Borde rosa */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    margin: 5px; /* Espaciado externo */
+    margin-bottom: 10px;
+    width: 40%;
+    text-align: center; /* Centrar el texto */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: transform 0.2s; /* Efecto de transformación */
+}
+
+.modelo:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+}
+
+.modelo img {
+    max-width: 90%; /* Ajustar el tamaño máximo */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-bottom: 5px; /* Espaciado debajo de la imagen */
+}
+
+section {
+    display: flex; /* Disposición flex */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+    justify-content: center; /* Centrar los elementos */
+}
+
+header h2 {
+    color: #ffdc40af; /* Un color más llamativo, puedes cambiarlo según tu preferencia */
+    font-style: italic; /* Para que el texto sea en cursivas */
+    font-size: 2em; /* Ajusta el tamaño según lo desees */
+}
+
+header h4 {
+    color: #0f0f0f; /* Un color más llamativo, puedes cambiarlo según tu preferencia */
+    font-style: italic; /* Para que el texto sea en cursivas */
+    font-size: 2em; /* Ajusta el tamaño según lo desees */
+}
+ h5 {
+    color: #000000; /* Un color más llamativo, puedes cambiarlo según tu preferencia */
+    font-style: italic; /* Para que el texto sea en cursivas */
+    font-size:1.5em; /* Ajusta el tamaño según lo desees */
+}
+
+nav {
+    text-align: right; /* Alinear el contenido a la derecha */
+    margin: 20px; /* Espacio alrededor del nav */
+
+}
+
+nav a {
+    background-color: #ff6f92; /* Botón rosa */
+    color: #fff;
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Transición para el hover */
+}
+
+nav a:hover {
+    background-color: #ff4c6c; /* Efecto hover más oscuro */
+}
+
+nav ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+}
+
+nav ul li {
+    display: inline-block; /* Permite más control sobre el espaciado */
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    background-color: #ff0099; /* Fondo rosa */
+    color: #000000; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Transición para el hover */
+}
+
+nav ul li a:hover {
+    background-color: #ff4c6c; /* Efecto hover más oscuro */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+#hero p {
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #555; /* Color del texto */
+    margin-top: 20px; /* Espacio entre el título y el texto */
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+
+#productos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff6f92, #ffe0f2, #ff6f92);
+    background-size: 400% 400%; /* Aumenta el tamaño del fondo para que se desplace */
+    animation: gradient-animation 10s ease infinite; /* Cambia la duración para una animación más suave */
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Comienza en la posición inicial */
+    }
+    50% {
+        background-position: 100% 50%; /* Desplaza a la mitad */
+    }
+    100% {
+        background-position: 0% 50%; /* Regresa a la posición inicial */
+    }
+}
+
+
+#modelos-disponibles {
+    background-color: #ffffff; /* Un color más vibrante */
+    color: #fff; /* Color del texto blanco */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+#modelos-disponibles h2 {
+    font-size: 2em; /* Aumentar el tamaño del texto */
+    margin: 0; /* Eliminar márgenes */
+    color: #0f0f0f; /* Un color más llamativo, puedes cambiarlo según tu preferencia */
+    font-style: italic; /* Para que el texto sea en cursivas */
+    
+}
+
+#modelos-disponibles h3 {
+    font-size: 1.5em; /* Aumentar el tamaño del texto */
+    margin: 0; /* Eliminar márgenes */
+    color: #0f0f0f; /* Un color más llamativo, puedes cambiarlo según tu preferencia */
+    font-style: italic; /* Para que el texto sea en cursivas */
+    
+}
+#modelos-disponibles p {
+    font-size: 1em; /* Aumentar el tamaño del texto */
+    margin: 0; /* Eliminar márgenes */
+    color: #0f0f0f; /* Un color más llamativo, puedes cambiarlo según tu preferencia */
+    font-style: normal; /* Para que el texto sea en cursivas */
+    
+}
+
+@media (max-width: 768px) { /* Ajuste para dispositivos móviles */
+    nav ul {
+        display: flex; /* Utiliza flexbox para una mejor alineación */
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos */
+        padding: 0; /* Sin relleno */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado vertical entre los elementos */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Ajusta el espaciado interno si es necesario */
+    }
+}
+
+.imagen-circular {
+    width: 250px; /* Ajusta el tamaño según lo necesites */
+    height: 250px; /* Asegúrate de que sea igual al ancho para que sea circular */
+    border-radius: 50%; /* Esto hace que el div sea circular */
+    background-image: url('Titulo\ pagina.jpeg'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra el área */
+    background-position: center; /* Centra la imagen */
+    margin: 20px auto; /* Centra el div horizontalmente */
+}
+
+#contacto h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#contacto p {
+    margin-top: 20px; /* Espacio superior entre el h2 y los párrafos */
+}
+
+#contacto {
+    text-align: center; /* Centra el contenido de la sección Contacto */
+    margin-bottom: 10px; /* Espacio debajo de la sección Contacto */
+}
+
+#formulario {
+    text-align: center; /* Centra el contenido del formulario */
+}
+
+#formulario p {
+    margin-top: 20px; /* Espacio superior para "Form" */
+}
+
+#sobre-nosotros h2 {
+    margin-bottom: 10px; /* Ajusta este valor para reducir el espacio */
+}
+
+#sobre-nosotros p {
+    margin-top: 0; /* Elimina el margen superior para reducir el espacio */
+}
