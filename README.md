@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <h1>Barbie Beauty</h1>
-        <h2>BOUTIQUE</h2>
+        
+        <div class="imagen-circular"></div>
         <nav>
             <ul>
                 <li><a href="#productos">Productos</a></li>
@@ -34,7 +34,9 @@
 
         <section id="productos">
             <h2>Nuestros Productos</h2>
-
+        </section>
+        
+        <section id="productos">
             <div class="producto">
                 <img src="TENIS/tenis nike 1.jpeg" alt="Producto 1">
                 <h3>TENIS NIKE</h3>
@@ -43,7 +45,7 @@
                 <button onclick="window.open('modelos tenis.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
             <div class="producto">
-                <img src="BRASIERES/Brasier mujer variados.jpeg" alt="Producto 2">
+                <img src="BRASIERES/BRASIER 10.jpeg" alt="Producto 2">
                 <h3>Set de ropa interior</h3>
                 <p>Set de brasier + pantie VS.</p>
                 <p>Precio: $500</p>
@@ -61,21 +63,32 @@
                 <h3>BOLSAS ALTA GAMA</h3>
                 <p>COACH, DIESEL.</p>
                 <p>Precio: $800</p>
-                <button onclick="window.open('modelos BOLSAS.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
+                <button onclick="window.open('Modelos Bolsas.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
         </section>
 
         <section id="sobre-nosotros">
+            
             <h2>Sobre Nosotros</h2>
-            <h3>En Barbie Beauty, creemos que cada persona tiene su propia belleza. Nuestra misión es proporcionar productos que celebren la diversidad y la creatividad.<h3>
+        </section>
+
+        <section id="sobre-nosotros">
+            <p>En Barbie Beauty, creemos que cada persona tiene su propia belleza. Nuestra misión es proporcionar productos que celebren la diversidad y la creatividad.<p>
+
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
+        </section>
+        
+        <section id="formulario">
+
             <form>
-                <p>Marlene Azucena 6141170236</p>
+                <p>Barbie beauty: 6142082750 / 6141170236</p>
+
             </form>
         </section>
+        
     </main>
 
     <footer>
@@ -83,4 +96,3 @@
     </footer>
 </body>
 </html>
-
