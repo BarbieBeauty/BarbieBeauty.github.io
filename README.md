@@ -52,11 +52,11 @@
                 <button onclick="window.open('modelos BRASIER.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
             <div class="producto">
-                <img src="CONJUNTO DEPORTIVO/Conjunto deportivo negro.jpeg" alt="Producto 3">
+                <img src="CONJUNTO DEPORTIVO/Conjunto deportivo 1.jpeg" alt="Producto 3">
                 <h3>Conjuntos deluxe</h3>
                 <p>Conjuntos como LV, GUCCI, DIOR, etc.</p>
                 <p>Precio: $750</p>
-                <button onclick="window.open('modelos de conjuntos.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
+                <button onclick="window.open('modelos conjuntos deportivos.html', '_blank')">Ver Modelos</button> <!-- Botón "Ver Modelos" -->
             </div>
             <div class="producto">
                 <img src="BOLSAS/Titulo de bolsas.jpeg" alt="Producto 4">
